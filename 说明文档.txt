@@ -20,4 +20,4 @@ docsify init ./docs   // docs 是项目的名字
 
 3.启动项目
 
-docsify serve
+docsify serve     //本地预览
