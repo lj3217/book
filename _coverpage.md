@@ -1,4 +1,4 @@
-![logo](assets/罗小黑.gif)
+<!-- ![logo](assets/罗小黑.gif) -->
 
 # 司徒浩然
 > 书山有路勤为径，学海无涯苦作舟
@@ -10,5 +10,5 @@
 * Multiple themes
 * Not build static html files -->
 
-[学习](https://www.baidu.com)
-[娱乐](#quick-start)
+<!-- [学习](https://www.baidu.com)
+[娱乐](#quick-start) -->
