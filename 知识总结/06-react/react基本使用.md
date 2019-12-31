@@ -1,3 +1,15 @@
+## react常用vs code插件：
+
+1. JavaScript (ES6) code snippets
+2. React-Native/React/Redux snippets for es6/es7
+3. Reactjs code snippets
+4. Auto Close Tag
+5. Auto Rename Tag
+
+
+
+
+
 ## react基本使用
 
 例如：一个小的dome项目 流程如下：
