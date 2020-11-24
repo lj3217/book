@@ -415,3 +415,101 @@
   }
 ````
 
+
+
+### 开关
+
+```javascript
+<template>
+  <div>
+    <input
+      class="my_switch"
+      type="checkbox"
+      :style="{'--activeColor':activeColor,'--inactiveColor':inactiveColor}"
+      :activeText="activeText"
+      :inactiveText="inactiveText"
+      :checked="checkedValue"
+      @click="toggleClick"
+    />
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    checkedValue: {
+      type: Boolean,
+      default: false
+    },
+    activeText: {
+      type: String,
+      default: '启动'
+    },
+    activeColor: {
+      type: String,
+      default: '#409eff'
+    },
+    inactiveText: {
+      type: String,
+      default: '禁用'
+    },
+    inactiveColor: {
+      type: String,
+      default: '#f77463'
+    }
+  },
+  methods: {
+    toggleClick (e) {
+      this.$emit('toggleClick', e.target.checked)
+      console.log(this.$emit('toggleClick', e.target.checked))
+    }
+  }
+}
+</script>
+
+<style scoped>
+.my_switch {
+  position: relative;
+  width: 52px;
+  height: 20px;
+  border: 2px solid var(--activeColor);
+  outline: 0;
+  border-radius: 0;
+  transition: background-color 0.1s, border 0.1s;
+  appearance: none;
+  outline: 0;
+  background-color: var(--activeColor);
+  border-radius: 15px;
+  box-sizing: content-box;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.my_switch:after {
+  content: attr(activeText);
+  color: var(--activeColor);
+  font-size: 8px;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+}
+.my_switch:checked:after {
+  content: attr(inactiveText);
+  color: var(--inactiveColor);
+  transform: translateX(22px);
+}
+.my_switch:checked {
+  border-color: var(--inactiveColor);
+  background-color: var(--inactiveColor);
+}
+</style>
+
+```
+

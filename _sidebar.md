@@ -1,7 +1,8 @@
 * **js**
   * [数组合并_求最大值](知识总结/js/数组合并_求最大值.md)
 * **vue**
-  * 
+  * 清除默认样式
+    * [tomcat启动出现乱码](知识总结/vue/清除默认样式/clearDefaultStyle.css)
 * **tomcat**
   * [tomcat启动出现乱码](知识总结/tomcat/tomcat启动出现乱码.md)
 * **echarts**
