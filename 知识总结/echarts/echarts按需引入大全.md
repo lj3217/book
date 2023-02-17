@@ -72,3 +72,13 @@ require('echarts/lib/component/toolbox')
 require('zrender/lib/vml/vml')
 ```
 
+### Echarts自适应失效 
+
+```javascript
+Echarts自适应失效  window.onresize；或者多个图标使用时只有最后一个图标生效
+这是可以使用：
+window.addEvenListener("resize", function () {
+	myChart.resize()
+})
+```
+

@@ -13,8 +13,6 @@ unzip   解压缩包
 env   显示所有环境变量
 ```
 
-
-
 ### 解压tar.xz文件
 
 ````javascript

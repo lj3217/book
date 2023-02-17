@@ -7,8 +7,3 @@
 4、修改为java.util.logging.ConsoleHandler.encoding = GBK
 5、重启tomcat
 ```
-
-
-
-
-
